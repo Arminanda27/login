@@ -79,12 +79,11 @@
 </head>
 <body>
     <ul class="menu">
-        <li class="menu-list"><a href="./form/pendaftar.php">Daftar</a></li>
         <li class="menu-list"><a href="./logout.php">Logout</a></li>
     </ul>
     <div class="jumbotron">
         <div class="container">
-        <h1>Hello <?php echo strtoupper($_SESSION['username']) ?>!</h1>
+        <h1>Hello <?php echo strtoupper($_SESSION['nama']) ?>!</h1>
         <p>How are u today? ;D</p>
         </div>
     </div>

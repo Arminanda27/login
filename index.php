@@ -19,18 +19,21 @@ if (isset($_POST['submit'])) {
         if($row['level'] == 'user'){
         #code
         $_SESSION['username'] = $row['username'];
+        $_SESSION['nama'] = $row['nama'];
         $_SESSION['level'] = $row['user'];
         header('location: welcome.php');
         }
         if($row['level'] == 'admin'){
         #code
         $_SESSION['username'] = $row['username'];
+        $_SESSION['nama'] = $row['nama'];
         $_SESSION['level'] = $row['admin'];
         header('location: welcome.php');
 
     }if($row['level'] == 'SuperAdmin'){
         #code
         $_SESSION['username'] = $row['username'];
+        $_SESSION['nama'] = $row['nama'];  
         $_SESSION['level'] = $row['user'];
         header('location: welcome.php');
     }
